@@ -14,7 +14,9 @@ email: emiliano@sandler.com.uy
 # phone_title: Phone (Phone title override)
 #website: Your website (eg. https://google.com)(optional)
 # website_title: Web (Website title override)
-image: images/profile.jpg
+
+image: "images/profile.jpg"
+url: "https://emiliano.sandler.com.uy"
 
 # Dark Mode (true/false/never)
 darkmode: true
