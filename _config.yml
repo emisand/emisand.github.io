@@ -51,9 +51,7 @@ additional_links:
 # About Section
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-  
+about_content: | # this will include new lines to allow paragraphs  
   Senior Software Engineer with 14+ years of experience building and scaling web applications, cloud infrastructure, and event technology platforms.
   
   **Technical Skills**
@@ -152,7 +150,7 @@ content:
       I work well both in-office and remotely, and I’m comfortable adapting to different team dynamics. I also bring strong problem-solving skills to the table, especially when tackling tricky technical challenges or finding clean solutions under pressure.
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
