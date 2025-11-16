@@ -3,4 +3,5 @@
 layout: default
 title: "Emiliano Sandler — Senior .NET & Cloud Engineer"
 description: "Senior Software Engineer with 14+ years of experience building and scaling web applications, cloud infrastructure, and event technology platforms."
+last_modified_at: 2025-11-16 21:52:00 +00:00
 ---
