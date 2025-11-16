@@ -5,6 +5,18 @@
 
   <title>{{ site.name }} | {{ site.title }}</title>
   {%- seo title=false -%}
+  
+  <!-- Explicit overrides (placed after jekyll-seo-tag) -->
+  <meta property="og:site_name" content="{{ site.name | escape }}" />
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}" />
+  <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}" />
+
+  <!-- Force canonical & open graph url to HTTPS (use your preferred domain) -->
+  <link rel="canonical" href="https://emiliano.sandler.com.uy{{ page.url | default: '/' }}" />
+  <meta property="og:url" content="https://emiliano.sandler.com.uy{{ page.url | default: '/' }}" />
+
+  <!-- Prefer a larger Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | default: '/assets/favicon.ico' | relative_url }}">
