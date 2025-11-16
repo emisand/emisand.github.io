@@ -50,26 +50,90 @@ additional_links:
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+  
+  Senior Software Engineer with 14+ years of experience building and scaling web applications, cloud infrastructure, and event technology platforms.
+  
+  Technical Skills:
+  - **Languages & Frameworks:** C#, .NET (Framework 4.5 to .NET 8), ASP.NET Core, JavaScript, TypeScript, Node.js, Express, Angular, Vue.js, HTML5, CSS3
+  - **Cloud & DevOps:** AWS, Azure, Docker, Azure DevOps, GitHub Actions, CI/CD, Linux (RHEL), Windows Server, VMware vSphere
+  - **Databases:** Microsoft SQL Server, PostgreSQL, Redis, Entity Framework Core, Dapper
+  - **Architecture & Development:**: SaaS, Microservices, REST API Design, ASP.NET Boilerplate, ABP Framework, API Client Generation (Swagger/NSwag), Clean Architecture, SOLID Principles
+  - **Payments & Integrations:** PayPal, MercadoPago, Stripe, Sistarbank, local banking APIs, PCI compliance
+  - **Collaboration & Practices:** Agile/Scrum, Git-based workflows, Code Reviews, Mentoring, Technical Documentation
 
 content:
+  - title: Experience
+    layout: list
+    content:
+      - layout: right
+        title: InZone Event Tech
+        sub_title: Senior Software Engineer / Technical Consultant
+        caption: June 2024 - present
+        link: https://www.inzonesoft.com
+        description: | # this will include new lines to allow paragraphs
+          - Provide ongoing technical consulting and hands-on development for the Event Management SaaS built with C#, .NET 6, JavaScript, TypeScript, and Webpack, implementing new features and enhancements requested by event clients, along with regular security and reliability updates.
+          - Designed and provisioned the production infrastructure on OVH’s VMware ESXi, hosting application services, load balancers, and supporting web services on RHEL, and a SQL Server 2022 VM instance on Windows Server 2022, achieving a 40% reduction in hosting costs while improving performance and operational control.
+          - Develop and extend REST APIs to provide clients with secure access to detailed event and reporting data, enabling integration with their internal Business Intelligence and analytics platforms.
+          - Maintain automated unit and integration tests and manage CI/CD pipelines in Azure DevOps for streamlined staging and production deployments.
+          - Collaborate directly with clients to gather requirements, refine workflows, and deliver reliable, high-performance updates.
+      - layout: right
+        title: Customily
+        sub_title: Senior Back-End Developer
+        caption: October 2023 - June 2024
+        link: https://www.customily.com/
+        description: | # this will include new lines to allow paragraphs
+          - Enhanced and maintained personalization backends built with ASP.NET (.NET Framework 4.8 / .NET 5) using Entity Framework 6, and Node.js 16 using Express, TypeORM, and multiple PostgreSQL databases.
+          - Refactored and upgraded projects from .NET 5 to .NET 8, resolving dependency and Docker compatibility issues, improving maintainability and performance.
+          - Improved user experience across Angular and Vue.js frontends by refining UI components and optimizing interactions.
+          - Reduced repository size by migrating over 2.5 GB of static images to AWS S3, significantly improving build and deployment times.
+          - Implemented CI/CD pipelines using GitHub Actions deploying to AWS ECS/EC2, and relied on Datadog to validate correct behavior across staging and production environments.
+          - Participated actively in Agile/SCRUM development cycles, contributing to sprint planning, daily stand-ups, and code reviews to ensure consistent delivery and collaboration.
+      - layout: right
+        title: InZone Event Tech
+        sub_title: Chief Technology Officer (CTO) & Partner
+        caption: June 2016 - October 2023
+        link: https://www.inzonesoft.com
+        description: | # this will include new lines to allow paragraphs
+          - Co-architected and developed the company’s Event Management SaaS platform using ASP.NET Core (from .NET Core 1.0 to .NET 6), designing both backend and frontend components with ASP.NET Zero, the commercial version of ASP.NET Boilerplate featuring the Metronic UI framework.
+          - Rewrote several modules from JavaScript to TypeScript with Webpack, improving maintainability and performance.
+          - Designed, implemented, and maintained cloud infrastructure and CI/CD pipelines in Azure DevOps.
+          - Performed a major cloud migration from Azure to AWS, achieving improved scalability, redundancy, and a 25% cost reduction, while strengthening infrastructure security and disaster recovery.
+          - Developed and optimized complex SQL Server stored procedures and reporting components to support large-scale event data and analytics, reducing the report generation time from more than 30 seconds to less than a second.
+          - Built and executed automated performance and load-testing suites with Selenium and an external cloud testing provider to ensure platform scalability.
+      - layout: right
+        title: InZone Event Tech
+        sub_title: Senior Software Engineer
+        caption: March 2013 - June 2016
+        link: https://www.inzonesoft.com
+        description: | # this will include new lines to allow paragraphs
+          - Designed and developed web applications using ASP.NET (.NET Framework 4.6) with C#, Entity Framework 6, and SQL Server, delivering reliable and scalable solutions for international event management.
+          - Developed a mobile application with Xamarin for Android, enabling photographers to capture event photos and automatically associate them with attendees, allowing guests to later receive personalized, branded images.
+          - Built interactive desktop applications in WPF using the MVVM pattern, including real-time attendee welcome screens that displayed guest names and photos as they entered the venue.
+          - Delivered software used in high-profile international events, including the Uruguay Pavilion at EXPO Milan 2015 (free ticket reservation system) and a major music festival in Los Angeles, supporting thousands of attendees and enhancing on-site registration and engagement experiences.
+          - Improved platform performance and maintainability by refactoring legacy modules, optimizing SQL queries, and applying consistent coding standards across projects.
+      - layout: right
+        title: InZone Event Tech
+        sub_title: Web Developer
+        caption: October 2011 - March 2013
+        link: https://www.inzonesoft.com
+        description: | # this will include new lines to allow paragraphs
+          - Developed the first generation of the Event Management platform using ASP.NET MVC and jQuery, serving hundreds of events and laying the foundation for the company’s SaaS product.
+          - Built SmartNight, a nightclub subscription and guest-management system with RFID-based access control and guest list coordination.
+          - Contributed to existing products ZonaCamping (online campsite reservation system) and PagoYVoy (payment gateway for rental stay reservations), ensuring secure and reliable transaction workflows for over 1000 rental stay locations.
+          - Implemented a management mobile app for SmartNight with Ionic Framework, supporting on-site operations and administration.
+          - Maintained legacy customer projects in C# and VB.NET, ensuring continuity during platform evolution.
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
+        title: InAccess
+        link: https://inzonesoft.com/
+        link_text: Website
         additional_links:
           - title:  Github page for project (eg. sproogen/modern-resume-theme)
             icon: fab fa-github
@@ -78,38 +142,23 @@ content:
             icon: fab fa-github
             url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         quote: >
-          Short overview of the project (optional)
+          Event Management SaaS solution that handles the entire lifecycle of corporate and large scale events.
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
-  - title: Experience
-    layout: list
-    content:
-      - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
-        quote: >
-          Short description of the company (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of role
+          Co-architected and developed the entire SaaS solution from scratch using ASP.NET Boilerplate and implemented the CI/CD pipelines together with the cloud infrastructure
   - title: Education
     layout: list
     content:
       - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
-        quote: >
-          Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of qualification
+        title: Universidad ORT Uruguay
+        sub_title: Bachelor in Systems Engineering
+        caption: 2009-2013
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
       This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      I’m someone who genuinely enjoys learning and growing—whether it’s picking up new languages like Korean, practicing archery, gaming, or diving into the latest tech trends.  
+      I work well both in-office and remotely, and I’m comfortable adapting to different team dynamics. I also bring strong problem-solving skills to the table, especially when tackling tricky technical challenges or finding clean solutions under pressure.
 
 # Footer
 footer_show_references: true
