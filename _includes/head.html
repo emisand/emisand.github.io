@@ -6,6 +6,9 @@
   <title>{{ site.name }} | {{ site.title }}</title>
   {%- seo title=false -%}
 
+  <meta property="og:image" content="https://emiliano.sandler.com.uy/images/profile.jpg">
+  <meta name="twitter:image" content="https://emiliano.sandler.com.uy/images/profile.jpg">
+
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | default: '/assets/favicon.ico' | relative_url }}">
 
@@ -18,4 +21,22 @@
   {%- if jekyll.environment == 'production' and site.gtag -%}
     {%- include gtag.html -%}
   {%- endif -%}
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.name }}",
+    "jobTitle": "{{ site.title }}",
+    "url": "https://emiliano.sandler.com.uy",
+    "image": "https://emiliano.sandler.com.uy/images/profile.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/emisand",
+      "https://github.com/emisand",
+	  "https://www.facebook.com/emisand",
+	  "https://www.instagram.com/emisandl"
+    ],
+    "description": "{{ site.title }}"
+  }
+  </script>
 </head>
