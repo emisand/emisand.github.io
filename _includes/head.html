@@ -4,10 +4,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{{ site.name }} | {{ site.title }}</title>
-  {%- seo title=false -%}
-
+  
+  <link rel="canonical" href="https://emiliano.sandler.com.uy/" />
+  
+  <meta name="description" content="{{ page.description }}">
+  
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:url" content="https://emiliano.sandler.com.uy/">
   <meta property="og:image" content="https://emiliano.sandler.com.uy/images/profile.jpg">
+  <meta property="profile:first_name" content="Emiliano">
+  <meta property="profile:last_name" content="Sandler">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
   <meta name="twitter:image" content="https://emiliano.sandler.com.uy/images/profile.jpg">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.name }}",
+    "jobTitle": "{{ site.title }}",
+    "description": "{{ page.description }}",
+    "image": "https://emiliano.sandler.com.uy/images/profile.jpg",
+    "url": "https://emiliano.sandler.com.uy/",
+    "sameAs": [
+      "https://www.linkedin.com/in/emisand",
+      "https://orcid.org/0009-0009-5225-1016",
+      "https://github.com/emisand",
+      "https://stackoverflow.com/users/2518656/emiliano-sandler",
+      "https://www.facebook.com/emisand",
+      "https://www.instagram.com/emisandl"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.name }}",
+    "url": "https://emiliano.sandler.com.uy/"
+  }
+  </script>
 
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | default: '/assets/favicon.ico' | relative_url }}">
@@ -21,22 +63,4 @@
   {%- if jekyll.environment == 'production' and site.gtag -%}
     {%- include gtag.html -%}
   {%- endif -%}
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "{{ site.name }}",
-    "jobTitle": "{{ site.title }}",
-    "url": "https://emiliano.sandler.com.uy",
-    "image": "https://emiliano.sandler.com.uy/images/profile.jpg",
-    "sameAs": [
-      "https://www.linkedin.com/in/emisand",
-      "https://github.com/emisand",
-	  "https://www.facebook.com/emisand",
-	  "https://www.instagram.com/emisandl"
-    ],
-    "description": "{{ site.title }}"
-  }
-  </script>
 </head>
